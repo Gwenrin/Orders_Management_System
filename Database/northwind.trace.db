@@ -1,0 +1,600 @@
+2025-12-25 21:58:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "RUNSCRIPT FROM 'lib\northwind.sql'  MYSQL[*]"
+Syntax error in SQL statement "RUNSCRIPT FROM 'lib\northwind.sql'  MYSQL[*]"; SQL statement:
+RUNSCRIPT FROM 'lib\northwind.sql'  mysql [42000-200]
+2025-12-25 21:58:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "RUNSCRIPT FROM 'lib\northwind.sql'  MYSQL[*]"
+Syntax error in SQL statement "RUNSCRIPT FROM 'lib\northwind.sql'  MYSQL[*]"; SQL statement:
+RUNSCRIPT FROM 'lib\northwind.sql'  mysql [42000-200]
+2025-12-25 21:59:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+CREATE TABLE `CATEGORIES` (
+  `CATEGORYID` INT DEFAULT NULL,
+  `CATEGORYNAME` TEXT,
+  `DESCRIPTION` TEXT
+) ENGINE=[*]INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_0900_AI_CI"; oczekiwano "identifier"
+Syntax error in SQL statement "
+CREATE TABLE `CATEGORIES` (
+  `CATEGORYID` INT DEFAULT NULL,
+  `CATEGORYNAME` TEXT,
+  `DESCRIPTION` TEXT
+) ENGINE=[*]INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_0900_AI_CI"; expected "identifier"; SQL statement:
+
+CREATE TABLE `categories` (
+  `categoryID` int DEFAULT NULL,
+  `categoryName` text,
+  `description` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci [42001-200]
+2025-12-26 10:09:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+
+  
+                                      
+  
+
+LOCK[*] TABLES `CATEGORIES` WRITE"
+Syntax error in SQL statement "
+
+  
+                                      
+  
+
+LOCK[*] TABLES `CATEGORIES` WRITE"; SQL statement:
+
+
+--
+-- Dumping data for table `categories`
+--
+
+LOCK TABLES `categories` WRITE [42000-200]
+2025-12-26 10:11:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"
+Syntax error in SQL statement "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"; SQL statement:
+
+
+--
+-- Dumping data for table `categories`
+--
+
+ `categories` WRITE [42000-200]
+2025-12-26 10:11:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"
+Syntax error in SQL statement "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"; SQL statement:
+
+
+--
+-- Dumping data for table `categories`
+--
+
+ `categories` WRITE [42000-200]
+2025-12-26 10:12:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"
+Syntax error in SQL statement "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"; SQL statement:
+
+
+--
+-- Dumping data for table `categories`
+--
+
+ `categories` WRITE [42000-200]
+2025-12-26 10:13:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"
+Syntax error in SQL statement "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"; SQL statement:
+
+
+--
+-- Dumping data for table `categories`
+--
+
+ `categories` WRITE [42000-200]
+2025-12-26 10:14:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"
+Syntax error in SQL statement "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"; SQL statement:
+
+
+--
+-- Dumping data for table `categories`
+--
+
+ `categories` WRITE [42000-200]
+2025-12-26 10:16:13 database: wrong user or password; user: "ROOT"
+org.h2.message.DbException: Nieprawidłowy użytkownik/hasło
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at org.h2.tools.RunScript.process(RunScript.java:327)
+	at org.h2.tools.RunScript.runTool(RunScript.java:143)
+	at org.h2.tools.RunScript.main(RunScript.java:70)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nieprawidłowy użytkownik/hasło
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 17 more
+2025-12-26 10:16:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"
+Syntax error in SQL statement "
+
+  
+                                      
+  
+
+ `CATEGORIES`[*] WRITE"; SQL statement:
+
+
+--
+-- Dumping data for table `categories`
+--
+
+ `categories` WRITE [42000-200]
+2025-12-26 10:17:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO `CUSTOMERS` VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE'),('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'ABONDANCE','DANIEL TONINI','SALES REPRESENTATIVE','VERSAILLES','FRANCE'),('LAMAI','LA MAISON D\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'S STOP N SHOP','JAIME YORRES','OWNER','SAN FRANCISCO','USA'),('LILAS','LILA-SUPERMERCADO','CARLOS GONZÁLEZ','ACCOUNTING MANAGER','BARQUISIMETO','VENEZUELA'),('LINOD','LINO-DELICATESES','FELIPE IZQUIERDO','OWNER','I. DE MARGARITA','VENEZUELA'),('LONEP','LONESOME PINE RESTAURANT','FRAN WILSON','SALES MANAGER','PORTLAND','USA'),('MAGAA','MAGAZZINI ALIMENTARI RIUNITI','GIOVANNI ROVELLI','MARKETING MANAGER','BERGAMO','ITALY'),('MAISD','MAISON DEWEY','CATHERINE DEWEY','SALES AGENT','BRUXELLES','BELGIUM'),('MEREP','MČRE PAILLARDE','JEAN FRESNIČRE','MARKETING ASSISTANT','MONTRÉAL','CANADA'),('MORGK','MORGENSTERN GESUNDKOST','ALEXANDER FEUER','MARKETING ASSISTANT','LEIPZIG','GERMANY'),('NORTS','NORTH/SOUTH','SIMON CROWTHER','SALES ASSOCIATE','LONDON','UK'),('OCEAN','OCÉANO ATLÁNTICO LTDA.','YVONNE MONCADA','SALES AGENT','BUENOS AIRES','ARGENTINA'),('OLDWO','OLD WORLD DELICATESSEN','RENE PHILLIPS','SALES REPRESENTATIVE','ANCHORAGE','USA'),('OTTIK','OTTILIES KÄSELADEN','HENRIETTE PFALZHEIM','OWNER','KÖLN','GERMANY'),('PARIS','PARIS SPÉCIALITÉS','MARIE BERTRAND','OWNER','PARIS','FRANCE'),('PERIC','PERICLES COMIDAS CLÁSICAS','GUILLERMO FERNÁNDEZ','SALES REPRESENTATIVE','MEXICO CITY','MEXICO'),('PICCO','PICCOLO UND MEHR','GEORG PIPPS','SALES MANAGER','SALZBURG','AUSTRIA'),('PRINI','PRINCESA ISABEL VINHOS','ISABEL DE CASTRO','SALES REPRESENTATIVE','LISBOA','PORTUGAL'),('QUEDE','QUE DELÍCIA','BERNARDO BATISTA','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL'),('QUEEN','QUEEN COZINHA','LÚCIA CARVALHO','MARKETING ASSISTANT','SAO PAULO','BRAZIL'),('QUICK','QUICK-STOP','HORST KLOSS','ACCOUNTING MANAGER','CUNEWALDE','GERMANY'),('RANCH','RANCHO GRANDE','SERGIO GUTIÉRREZ','SALES REPRESENTATIVE','BUENOS AIRES','ARGENTINA'),('RATTC','RATTLESNAKE CANYON GROCERY','PAULA WILSON','ASSISTANT SALES REPRESENTATIVE','ALBUQUERQUE','USA'),('REGGC','REGGIANI CASEIFICI','MAURIZIO MORONI','SALES ASSOCIATE','REGGIO EMILIA','ITALY'),('RICAR','RICARDO ADOCICADOS','JANETE LIMEIRA','ASSISTANT SALES AGENT','RIO DE JANEIRO','BRAZIL'),('RICSU','RICHTER SUPERMARKT','MICHAEL HOLZ','SALES MANAGER','GENČVE','SWITZERLAND'),('ROMEY','ROMERO Y TOMILLO','ALEJANDRA CAMINO','ACCOUNTING MANAGER','MADRID','SPAIN'),('SANTG','SANTÉ GOURMET','JONAS BERGULFSEN','OWNER','STAVERN','NORWAY'),('SAVEA','SAVE-A-LOT MARKETS','JOSE PAVAROTTI','SALES REPRESENTATIVE','BOISE','USA'),('SEVES','SEVEN SEAS IMPORTS','HARI KUMAR','SALES MANAGER','LONDON','UK'),('SIMOB','SIMONS BISTRO','JYTTE PETERSEN','OWNER','KOBENHAVN','DENMARK'),('SPECD','SPÉCIALITÉS DU MONDE','DOMINIQUE PERRIER','MARKETING MANAGER','PARIS','FRANCE'),('SPLIR','SPLIT RAIL BEER & ALE','ART BRAUNSCHWEIGER','SALES MANAGER','LANDER','USA'),('SUPRD','SUPRĘMES DÉLICES','PASCALE CARTRAIN','ACCOUNTING MANAGER','CHARLEROI','BELGIUM'),('THEBI','THE BIG CHEESE','LIZ NIXON','MARKETING MANAGER','PORTLAND','USA'),('THECR','THE CRACKER BOX','LIU WONG','MARKETING ASSISTANT','BUTTE','USA'),('TOMSP','TOMS SPEZIALITÄTEN','KARIN JOSEPHS','MARKETING MANAGER','MÜNSTER','GERMANY'),('TORTU','TORTUGA RESTAURANTE','MIGUEL ANGEL PAOLINO','OWNER','MEXICO CITY','MEXICO'),('TRADH','TRADIÇĂO HIPERMERCADOS','ANABELA DOMINGUES','SALES REPRESENTATIVE','SAO PAULO','BRAZIL'),('TRAIH','TRAIL\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO `CUSTOMERS` VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE'),('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'ABONDANCE','DANIEL TONINI','SALES REPRESENTATIVE','VERSAILLES','FRANCE'),('LAMAI','LA MAISON D\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'S STOP N SHOP','JAIME YORRES','OWNER','SAN FRANCISCO','USA'),('LILAS','LILA-SUPERMERCADO','CARLOS GONZÁLEZ','ACCOUNTING MANAGER','BARQUISIMETO','VENEZUELA'),('LINOD','LINO-DELICATESES','FELIPE IZQUIERDO','OWNER','I. DE MARGARITA','VENEZUELA'),('LONEP','LONESOME PINE RESTAURANT','FRAN WILSON','SALES MANAGER','PORTLAND','USA'),('MAGAA','MAGAZZINI ALIMENTARI RIUNITI','GIOVANNI ROVELLI','MARKETING MANAGER','BERGAMO','ITALY'),('MAISD','MAISON DEWEY','CATHERINE DEWEY','SALES AGENT','BRUXELLES','BELGIUM'),('MEREP','MČRE PAILLARDE','JEAN FRESNIČRE','MARKETING ASSISTANT','MONTRÉAL','CANADA'),('MORGK','MORGENSTERN GESUNDKOST','ALEXANDER FEUER','MARKETING ASSISTANT','LEIPZIG','GERMANY'),('NORTS','NORTH/SOUTH','SIMON CROWTHER','SALES ASSOCIATE','LONDON','UK'),('OCEAN','OCÉANO ATLÁNTICO LTDA.','YVONNE MONCADA','SALES AGENT','BUENOS AIRES','ARGENTINA'),('OLDWO','OLD WORLD DELICATESSEN','RENE PHILLIPS','SALES REPRESENTATIVE','ANCHORAGE','USA'),('OTTIK','OTTILIES KÄSELADEN','HENRIETTE PFALZHEIM','OWNER','KÖLN','GERMANY'),('PARIS','PARIS SPÉCIALITÉS','MARIE BERTRAND','OWNER','PARIS','FRANCE'),('PERIC','PERICLES COMIDAS CLÁSICAS','GUILLERMO FERNÁNDEZ','SALES REPRESENTATIVE','MEXICO CITY','MEXICO'),('PICCO','PICCOLO UND MEHR','GEORG PIPPS','SALES MANAGER','SALZBURG','AUSTRIA'),('PRINI','PRINCESA ISABEL VINHOS','ISABEL DE CASTRO','SALES REPRESENTATIVE','LISBOA','PORTUGAL'),('QUEDE','QUE DELÍCIA','BERNARDO BATISTA','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL'),('QUEEN','QUEEN COZINHA','LÚCIA CARVALHO','MARKETING ASSISTANT','SAO PAULO','BRAZIL'),('QUICK','QUICK-STOP','HORST KLOSS','ACCOUNTING MANAGER','CUNEWALDE','GERMANY'),('RANCH','RANCHO GRANDE','SERGIO GUTIÉRREZ','SALES REPRESENTATIVE','BUENOS AIRES','ARGENTINA'),('RATTC','RATTLESNAKE CANYON GROCERY','PAULA WILSON','ASSISTANT SALES REPRESENTATIVE','ALBUQUERQUE','USA'),('REGGC','REGGIANI CASEIFICI','MAURIZIO MORONI','SALES ASSOCIATE','REGGIO EMILIA','ITALY'),('RICAR','RICARDO ADOCICADOS','JANETE LIMEIRA','ASSISTANT SALES AGENT','RIO DE JANEIRO','BRAZIL'),('RICSU','RICHTER SUPERMARKT','MICHAEL HOLZ','SALES MANAGER','GENČVE','SWITZERLAND'),('ROMEY','ROMERO Y TOMILLO','ALEJANDRA CAMINO','ACCOUNTING MANAGER','MADRID','SPAIN'),('SANTG','SANTÉ GOURMET','JONAS BERGULFSEN','OWNER','STAVERN','NORWAY'),('SAVEA','SAVE-A-LOT MARKETS','JOSE PAVAROTTI','SALES REPRESENTATIVE','BOISE','USA'),('SEVES','SEVEN SEAS IMPORTS','HARI KUMAR','SALES MANAGER','LONDON','UK'),('SIMOB','SIMONS BISTRO','JYTTE PETERSEN','OWNER','KOBENHAVN','DENMARK'),('SPECD','SPÉCIALITÉS DU MONDE','DOMINIQUE PERRIER','MARKETING MANAGER','PARIS','FRANCE'),('SPLIR','SPLIT RAIL BEER & ALE','ART BRAUNSCHWEIGER','SALES MANAGER','LANDER','USA'),('SUPRD','SUPRĘMES DÉLICES','PASCALE CARTRAIN','ACCOUNTING MANAGER','CHARLEROI','BELGIUM'),('THEBI','THE BIG CHEESE','LIZ NIXON','MARKETING MANAGER','PORTLAND','USA'),('THECR','THE CRACKER BOX','LIU WONG','MARKETING ASSISTANT','BUTTE','USA'),('TOMSP','TOMS SPEZIALITÄTEN','KARIN JOSEPHS','MARKETING MANAGER','MÜNSTER','GERMANY'),('TORTU','TORTUGA RESTAURANTE','MIGUEL ANGEL PAOLINO','OWNER','MEXICO CITY','MEXICO'),('TRADH','TRADIÇĂO HIPERMERCADOS','ANABELA DOMINGUES','SALES REPRESENTATIVE','SAO PAULO','BRAZIL'),('TRAIH','TRAIL\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO `customers` VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','Laurence Lebihan','Owner','Marseille','France'),('BOTTM','Bottom-Dollar Markets','Elizabeth Lincoln','Accounting Manager','Tsawassen','Canada'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'abondance','Daniel Tonini','Sales Representative','Versailles','France'),('LAMAI','La maison d\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'s Stop N Shop','Jaime Yorres','Owner','San Francisco','USA'),('LILAS','LILA-Supermercado','Carlos González','Accounting Manager','Barquisimeto','Venezuela'),('LINOD','LINO-Delicateses','Felipe Izquierdo','Owner','I. de Margarita','Venezuela'),('LONEP','Lonesome Pine Restaurant','Fran Wilson','Sales Manager','Portland','USA'),('MAGAA','Magazzini Alimentari Riuniti','Giovanni Rovelli','Marketing Manager','Bergamo','Italy'),('MAISD','Maison Dewey','Catherine Dewey','Sales Agent','Bruxelles','Belgium'),('MEREP','Mčre Paillarde','Jean Fresničre','Marketing Assistant','Montréal','Canada'),('MORGK','Morgenstern Gesundkost','Alexander Feuer','Marketing Assistant','Leipzig','Germany'),('NORTS','North/South','Simon Crowther','Sales Associate','London','UK'),('OCEAN','Océano Atlántico Ltda.','Yvonne Moncada','Sales Agent','Buenos Aires','Argentina'),('OLDWO','Old World Delicatessen','Rene Phillips','Sales Representative','Anchorage','USA'),('OTTIK','Ottilies Käseladen','Henriette Pfalzheim','Owner','Köln','Germany'),('PARIS','Paris spécialités','Marie Bertrand','Owner','Paris','France'),('PERIC','Pericles Comidas clásicas','Guillermo Fernández','Sales Representative','Mexico City','Mexico'),('PICCO','Piccolo und mehr','Georg Pipps','Sales Manager','Salzburg','Austria'),('PRINI','Princesa Isabel Vinhos','Isabel de Castro','Sales Representative','Lisboa','Portugal'),('QUEDE','Que Delícia','Bernardo Batista','Accounting Manager','Rio de Janeiro','Brazil'),('QUEEN','Queen Cozinha','Lúcia Carvalho','Marketing Assistant','Sao Paulo','Brazil'),('QUICK','QUICK-Stop','Horst Kloss','Accounting Manager','Cunewalde','Germany'),('RANCH','Rancho grande','Sergio Gutiérrez','Sales Representative','Buenos Aires','Argentina'),('RATTC','Rattlesnake Canyon Grocery','Paula Wilson','Assistant Sales Representative','Albuquerque','USA'),('REGGC','Reggiani Caseifici','Maurizio Moroni','Sales Associate','Reggio Emilia','Italy'),('RICAR','Ricardo Adocicados','Janete Limeira','Assistant Sales Agent','Rio de Janeiro','Brazil'),('RICSU','Richter Supermarkt','Michael Holz','Sales Manager','Genčve','Switzerland'),('ROMEY','Romero y tomillo','Alejandra Camino','Accounting Manager','Madrid','Spain'),('SANTG','Santé Gourmet','Jonas Bergulfsen','Owner','Stavern','Norway'),('SAVEA','Save-a-lot Markets','Jose Pavarotti','Sales Representative','Boise','USA'),('SEVES','Seven Seas Imports','Hari Kumar','Sales Manager','London','UK'),('SIMOB','Simons bistro','Jytte Petersen','Owner','Kobenhavn','Denmark'),('SPECD','Spécialités du monde','Dominique Perrier','Marketing Manager','Paris','France'),('SPLIR','Split Rail Beer & Ale','Art Braunschweiger','Sales Manager','Lander','USA'),('SUPRD','Supręmes délices','Pascale Cartrain','Accounting Manager','Charleroi','Belgium'),('THEBI','The Big Cheese','Liz Nixon','Marketing Manager','Portland','USA'),('THECR','The Cracker Box','Liu Wong','Marketing Assistant','Butte','USA'),('TOMSP','Toms Spezialitäten','Karin Josephs','Marketing Manager','Münster','Germany'),('TORTU','Tortuga Restaurante','Miguel Angel Paolino','Owner','Mexico City','Mexico'),('TRADH','Tradiçăo Hipermercados','Anabela Domingues','Sales Representative','Sao Paulo','Brazil'),('TRAIH','Trail\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland') [42001-200]
+2025-12-26 10:20:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO ""customers"" VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE'),('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'ABONDANCE','DANIEL TONINI','SALES REPRESENTATIVE','VERSAILLES','FRANCE'),('LAMAI','LA MAISON D\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'S STOP N SHOP','JAIME YORRES','OWNER','SAN FRANCISCO','USA'),('LILAS','LILA-SUPERMERCADO','CARLOS GONZÁLEZ','ACCOUNTING MANAGER','BARQUISIMETO','VENEZUELA'),('LINOD','LINO-DELICATESES','FELIPE IZQUIERDO','OWNER','I. DE MARGARITA','VENEZUELA'),('LONEP','LONESOME PINE RESTAURANT','FRAN WILSON','SALES MANAGER','PORTLAND','USA'),('MAGAA','MAGAZZINI ALIMENTARI RIUNITI','GIOVANNI ROVELLI','MARKETING MANAGER','BERGAMO','ITALY'),('MAISD','MAISON DEWEY','CATHERINE DEWEY','SALES AGENT','BRUXELLES','BELGIUM'),('MEREP','MČRE PAILLARDE','JEAN FRESNIČRE','MARKETING ASSISTANT','MONTRÉAL','CANADA'),('MORGK','MORGENSTERN GESUNDKOST','ALEXANDER FEUER','MARKETING ASSISTANT','LEIPZIG','GERMANY'),('NORTS','NORTH/SOUTH','SIMON CROWTHER','SALES ASSOCIATE','LONDON','UK'),('OCEAN','OCÉANO ATLÁNTICO LTDA.','YVONNE MONCADA','SALES AGENT','BUENOS AIRES','ARGENTINA'),('OLDWO','OLD WORLD DELICATESSEN','RENE PHILLIPS','SALES REPRESENTATIVE','ANCHORAGE','USA'),('OTTIK','OTTILIES KÄSELADEN','HENRIETTE PFALZHEIM','OWNER','KÖLN','GERMANY'),('PARIS','PARIS SPÉCIALITÉS','MARIE BERTRAND','OWNER','PARIS','FRANCE'),('PERIC','PERICLES COMIDAS CLÁSICAS','GUILLERMO FERNÁNDEZ','SALES REPRESENTATIVE','MEXICO CITY','MEXICO'),('PICCO','PICCOLO UND MEHR','GEORG PIPPS','SALES MANAGER','SALZBURG','AUSTRIA'),('PRINI','PRINCESA ISABEL VINHOS','ISABEL DE CASTRO','SALES REPRESENTATIVE','LISBOA','PORTUGAL'),('QUEDE','QUE DELÍCIA','BERNARDO BATISTA','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL'),('QUEEN','QUEEN COZINHA','LÚCIA CARVALHO','MARKETING ASSISTANT','SAO PAULO','BRAZIL'),('QUICK','QUICK-STOP','HORST KLOSS','ACCOUNTING MANAGER','CUNEWALDE','GERMANY'),('RANCH','RANCHO GRANDE','SERGIO GUTIÉRREZ','SALES REPRESENTATIVE','BUENOS AIRES','ARGENTINA'),('RATTC','RATTLESNAKE CANYON GROCERY','PAULA WILSON','ASSISTANT SALES REPRESENTATIVE','ALBUQUERQUE','USA'),('REGGC','REGGIANI CASEIFICI','MAURIZIO MORONI','SALES ASSOCIATE','REGGIO EMILIA','ITALY'),('RICAR','RICARDO ADOCICADOS','JANETE LIMEIRA','ASSISTANT SALES AGENT','RIO DE JANEIRO','BRAZIL'),('RICSU','RICHTER SUPERMARKT','MICHAEL HOLZ','SALES MANAGER','GENČVE','SWITZERLAND'),('ROMEY','ROMERO Y TOMILLO','ALEJANDRA CAMINO','ACCOUNTING MANAGER','MADRID','SPAIN'),('SANTG','SANTÉ GOURMET','JONAS BERGULFSEN','OWNER','STAVERN','NORWAY'),('SAVEA','SAVE-A-LOT MARKETS','JOSE PAVAROTTI','SALES REPRESENTATIVE','BOISE','USA'),('SEVES','SEVEN SEAS IMPORTS','HARI KUMAR','SALES MANAGER','LONDON','UK'),('SIMOB','SIMONS BISTRO','JYTTE PETERSEN','OWNER','KOBENHAVN','DENMARK'),('SPECD','SPÉCIALITÉS DU MONDE','DOMINIQUE PERRIER','MARKETING MANAGER','PARIS','FRANCE'),('SPLIR','SPLIT RAIL BEER & ALE','ART BRAUNSCHWEIGER','SALES MANAGER','LANDER','USA'),('SUPRD','SUPRĘMES DÉLICES','PASCALE CARTRAIN','ACCOUNTING MANAGER','CHARLEROI','BELGIUM'),('THEBI','THE BIG CHEESE','LIZ NIXON','MARKETING MANAGER','PORTLAND','USA'),('THECR','THE CRACKER BOX','LIU WONG','MARKETING ASSISTANT','BUTTE','USA'),('TOMSP','TOMS SPEZIALITÄTEN','KARIN JOSEPHS','MARKETING MANAGER','MÜNSTER','GERMANY'),('TORTU','TORTUGA RESTAURANTE','MIGUEL ANGEL PAOLINO','OWNER','MEXICO CITY','MEXICO'),('TRADH','TRADIÇĂO HIPERMERCADOS','ANABELA DOMINGUES','SALES REPRESENTATIVE','SAO PAULO','BRAZIL'),('TRAIH','TRAIL\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO ""customers"" VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE'),('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'ABONDANCE','DANIEL TONINI','SALES REPRESENTATIVE','VERSAILLES','FRANCE'),('LAMAI','LA MAISON D\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'S STOP N SHOP','JAIME YORRES','OWNER','SAN FRANCISCO','USA'),('LILAS','LILA-SUPERMERCADO','CARLOS GONZÁLEZ','ACCOUNTING MANAGER','BARQUISIMETO','VENEZUELA'),('LINOD','LINO-DELICATESES','FELIPE IZQUIERDO','OWNER','I. DE MARGARITA','VENEZUELA'),('LONEP','LONESOME PINE RESTAURANT','FRAN WILSON','SALES MANAGER','PORTLAND','USA'),('MAGAA','MAGAZZINI ALIMENTARI RIUNITI','GIOVANNI ROVELLI','MARKETING MANAGER','BERGAMO','ITALY'),('MAISD','MAISON DEWEY','CATHERINE DEWEY','SALES AGENT','BRUXELLES','BELGIUM'),('MEREP','MČRE PAILLARDE','JEAN FRESNIČRE','MARKETING ASSISTANT','MONTRÉAL','CANADA'),('MORGK','MORGENSTERN GESUNDKOST','ALEXANDER FEUER','MARKETING ASSISTANT','LEIPZIG','GERMANY'),('NORTS','NORTH/SOUTH','SIMON CROWTHER','SALES ASSOCIATE','LONDON','UK'),('OCEAN','OCÉANO ATLÁNTICO LTDA.','YVONNE MONCADA','SALES AGENT','BUENOS AIRES','ARGENTINA'),('OLDWO','OLD WORLD DELICATESSEN','RENE PHILLIPS','SALES REPRESENTATIVE','ANCHORAGE','USA'),('OTTIK','OTTILIES KÄSELADEN','HENRIETTE PFALZHEIM','OWNER','KÖLN','GERMANY'),('PARIS','PARIS SPÉCIALITÉS','MARIE BERTRAND','OWNER','PARIS','FRANCE'),('PERIC','PERICLES COMIDAS CLÁSICAS','GUILLERMO FERNÁNDEZ','SALES REPRESENTATIVE','MEXICO CITY','MEXICO'),('PICCO','PICCOLO UND MEHR','GEORG PIPPS','SALES MANAGER','SALZBURG','AUSTRIA'),('PRINI','PRINCESA ISABEL VINHOS','ISABEL DE CASTRO','SALES REPRESENTATIVE','LISBOA','PORTUGAL'),('QUEDE','QUE DELÍCIA','BERNARDO BATISTA','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL'),('QUEEN','QUEEN COZINHA','LÚCIA CARVALHO','MARKETING ASSISTANT','SAO PAULO','BRAZIL'),('QUICK','QUICK-STOP','HORST KLOSS','ACCOUNTING MANAGER','CUNEWALDE','GERMANY'),('RANCH','RANCHO GRANDE','SERGIO GUTIÉRREZ','SALES REPRESENTATIVE','BUENOS AIRES','ARGENTINA'),('RATTC','RATTLESNAKE CANYON GROCERY','PAULA WILSON','ASSISTANT SALES REPRESENTATIVE','ALBUQUERQUE','USA'),('REGGC','REGGIANI CASEIFICI','MAURIZIO MORONI','SALES ASSOCIATE','REGGIO EMILIA','ITALY'),('RICAR','RICARDO ADOCICADOS','JANETE LIMEIRA','ASSISTANT SALES AGENT','RIO DE JANEIRO','BRAZIL'),('RICSU','RICHTER SUPERMARKT','MICHAEL HOLZ','SALES MANAGER','GENČVE','SWITZERLAND'),('ROMEY','ROMERO Y TOMILLO','ALEJANDRA CAMINO','ACCOUNTING MANAGER','MADRID','SPAIN'),('SANTG','SANTÉ GOURMET','JONAS BERGULFSEN','OWNER','STAVERN','NORWAY'),('SAVEA','SAVE-A-LOT MARKETS','JOSE PAVAROTTI','SALES REPRESENTATIVE','BOISE','USA'),('SEVES','SEVEN SEAS IMPORTS','HARI KUMAR','SALES MANAGER','LONDON','UK'),('SIMOB','SIMONS BISTRO','JYTTE PETERSEN','OWNER','KOBENHAVN','DENMARK'),('SPECD','SPÉCIALITÉS DU MONDE','DOMINIQUE PERRIER','MARKETING MANAGER','PARIS','FRANCE'),('SPLIR','SPLIT RAIL BEER & ALE','ART BRAUNSCHWEIGER','SALES MANAGER','LANDER','USA'),('SUPRD','SUPRĘMES DÉLICES','PASCALE CARTRAIN','ACCOUNTING MANAGER','CHARLEROI','BELGIUM'),('THEBI','THE BIG CHEESE','LIZ NIXON','MARKETING MANAGER','PORTLAND','USA'),('THECR','THE CRACKER BOX','LIU WONG','MARKETING ASSISTANT','BUTTE','USA'),('TOMSP','TOMS SPEZIALITÄTEN','KARIN JOSEPHS','MARKETING MANAGER','MÜNSTER','GERMANY'),('TORTU','TORTUGA RESTAURANTE','MIGUEL ANGEL PAOLINO','OWNER','MEXICO CITY','MEXICO'),('TRADH','TRADIÇĂO HIPERMERCADOS','ANABELA DOMINGUES','SALES REPRESENTATIVE','SAO PAULO','BRAZIL'),('TRAIH','TRAIL\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO "customers" VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','Laurence Lebihan','Owner','Marseille','France'),('BOTTM','Bottom-Dollar Markets','Elizabeth Lincoln','Accounting Manager','Tsawassen','Canada'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'abondance','Daniel Tonini','Sales Representative','Versailles','France'),('LAMAI','La maison d\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'s Stop N Shop','Jaime Yorres','Owner','San Francisco','USA'),('LILAS','LILA-Supermercado','Carlos González','Accounting Manager','Barquisimeto','Venezuela'),('LINOD','LINO-Delicateses','Felipe Izquierdo','Owner','I. de Margarita','Venezuela'),('LONEP','Lonesome Pine Restaurant','Fran Wilson','Sales Manager','Portland','USA'),('MAGAA','Magazzini Alimentari Riuniti','Giovanni Rovelli','Marketing Manager','Bergamo','Italy'),('MAISD','Maison Dewey','Catherine Dewey','Sales Agent','Bruxelles','Belgium'),('MEREP','Mčre Paillarde','Jean Fresničre','Marketing Assistant','Montréal','Canada'),('MORGK','Morgenstern Gesundkost','Alexander Feuer','Marketing Assistant','Leipzig','Germany'),('NORTS','North/South','Simon Crowther','Sales Associate','London','UK'),('OCEAN','Océano Atlántico Ltda.','Yvonne Moncada','Sales Agent','Buenos Aires','Argentina'),('OLDWO','Old World Delicatessen','Rene Phillips','Sales Representative','Anchorage','USA'),('OTTIK','Ottilies Käseladen','Henriette Pfalzheim','Owner','Köln','Germany'),('PARIS','Paris spécialités','Marie Bertrand','Owner','Paris','France'),('PERIC','Pericles Comidas clásicas','Guillermo Fernández','Sales Representative','Mexico City','Mexico'),('PICCO','Piccolo und mehr','Georg Pipps','Sales Manager','Salzburg','Austria'),('PRINI','Princesa Isabel Vinhos','Isabel de Castro','Sales Representative','Lisboa','Portugal'),('QUEDE','Que Delícia','Bernardo Batista','Accounting Manager','Rio de Janeiro','Brazil'),('QUEEN','Queen Cozinha','Lúcia Carvalho','Marketing Assistant','Sao Paulo','Brazil'),('QUICK','QUICK-Stop','Horst Kloss','Accounting Manager','Cunewalde','Germany'),('RANCH','Rancho grande','Sergio Gutiérrez','Sales Representative','Buenos Aires','Argentina'),('RATTC','Rattlesnake Canyon Grocery','Paula Wilson','Assistant Sales Representative','Albuquerque','USA'),('REGGC','Reggiani Caseifici','Maurizio Moroni','Sales Associate','Reggio Emilia','Italy'),('RICAR','Ricardo Adocicados','Janete Limeira','Assistant Sales Agent','Rio de Janeiro','Brazil'),('RICSU','Richter Supermarkt','Michael Holz','Sales Manager','Genčve','Switzerland'),('ROMEY','Romero y tomillo','Alejandra Camino','Accounting Manager','Madrid','Spain'),('SANTG','Santé Gourmet','Jonas Bergulfsen','Owner','Stavern','Norway'),('SAVEA','Save-a-lot Markets','Jose Pavarotti','Sales Representative','Boise','USA'),('SEVES','Seven Seas Imports','Hari Kumar','Sales Manager','London','UK'),('SIMOB','Simons bistro','Jytte Petersen','Owner','Kobenhavn','Denmark'),('SPECD','Spécialités du monde','Dominique Perrier','Marketing Manager','Paris','France'),('SPLIR','Split Rail Beer & Ale','Art Braunschweiger','Sales Manager','Lander','USA'),('SUPRD','Supręmes délices','Pascale Cartrain','Accounting Manager','Charleroi','Belgium'),('THEBI','The Big Cheese','Liz Nixon','Marketing Manager','Portland','USA'),('THECR','The Cracker Box','Liu Wong','Marketing Assistant','Butte','USA'),('TOMSP','Toms Spezialitäten','Karin Josephs','Marketing Manager','Münster','Germany'),('TORTU','Tortuga Restaurante','Miguel Angel Paolino','Owner','Mexico City','Mexico'),('TRADH','Tradiçăo Hipermercados','Anabela Domingues','Sales Representative','Sao Paulo','Brazil'),('TRAIH','Trail\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland') [42001-200]
+2025-12-26 10:20:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO ""customers"" VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE'),('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'ABONDANCE','DANIEL TONINI','SALES REPRESENTATIVE','VERSAILLES','FRANCE'),('LAMAI','LA MAISON D\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'S STOP N SHOP','JAIME YORRES','OWNER','SAN FRANCISCO','USA'),('LILAS','LILA-SUPERMERCADO','CARLOS GONZÁLEZ','ACCOUNTING MANAGER','BARQUISIMETO','VENEZUELA'),('LINOD','LINO-DELICATESES','FELIPE IZQUIERDO','OWNER','I. DE MARGARITA','VENEZUELA'),('LONEP','LONESOME PINE RESTAURANT','FRAN WILSON','SALES MANAGER','PORTLAND','USA'),('MAGAA','MAGAZZINI ALIMENTARI RIUNITI','GIOVANNI ROVELLI','MARKETING MANAGER','BERGAMO','ITALY'),('MAISD','MAISON DEWEY','CATHERINE DEWEY','SALES AGENT','BRUXELLES','BELGIUM'),('MEREP','MČRE PAILLARDE','JEAN FRESNIČRE','MARKETING ASSISTANT','MONTRÉAL','CANADA'),('MORGK','MORGENSTERN GESUNDKOST','ALEXANDER FEUER','MARKETING ASSISTANT','LEIPZIG','GERMANY'),('NORTS','NORTH/SOUTH','SIMON CROWTHER','SALES ASSOCIATE','LONDON','UK'),('OCEAN','OCÉANO ATLÁNTICO LTDA.','YVONNE MONCADA','SALES AGENT','BUENOS AIRES','ARGENTINA'),('OLDWO','OLD WORLD DELICATESSEN','RENE PHILLIPS','SALES REPRESENTATIVE','ANCHORAGE','USA'),('OTTIK','OTTILIES KÄSELADEN','HENRIETTE PFALZHEIM','OWNER','KÖLN','GERMANY'),('PARIS','PARIS SPÉCIALITÉS','MARIE BERTRAND','OWNER','PARIS','FRANCE'),('PERIC','PERICLES COMIDAS CLÁSICAS','GUILLERMO FERNÁNDEZ','SALES REPRESENTATIVE','MEXICO CITY','MEXICO'),('PICCO','PICCOLO UND MEHR','GEORG PIPPS','SALES MANAGER','SALZBURG','AUSTRIA'),('PRINI','PRINCESA ISABEL VINHOS','ISABEL DE CASTRO','SALES REPRESENTATIVE','LISBOA','PORTUGAL'),('QUEDE','QUE DELÍCIA','BERNARDO BATISTA','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL'),('QUEEN','QUEEN COZINHA','LÚCIA CARVALHO','MARKETING ASSISTANT','SAO PAULO','BRAZIL'),('QUICK','QUICK-STOP','HORST KLOSS','ACCOUNTING MANAGER','CUNEWALDE','GERMANY'),('RANCH','RANCHO GRANDE','SERGIO GUTIÉRREZ','SALES REPRESENTATIVE','BUENOS AIRES','ARGENTINA'),('RATTC','RATTLESNAKE CANYON GROCERY','PAULA WILSON','ASSISTANT SALES REPRESENTATIVE','ALBUQUERQUE','USA'),('REGGC','REGGIANI CASEIFICI','MAURIZIO MORONI','SALES ASSOCIATE','REGGIO EMILIA','ITALY'),('RICAR','RICARDO ADOCICADOS','JANETE LIMEIRA','ASSISTANT SALES AGENT','RIO DE JANEIRO','BRAZIL'),('RICSU','RICHTER SUPERMARKT','MICHAEL HOLZ','SALES MANAGER','GENČVE','SWITZERLAND'),('ROMEY','ROMERO Y TOMILLO','ALEJANDRA CAMINO','ACCOUNTING MANAGER','MADRID','SPAIN'),('SANTG','SANTÉ GOURMET','JONAS BERGULFSEN','OWNER','STAVERN','NORWAY'),('SAVEA','SAVE-A-LOT MARKETS','JOSE PAVAROTTI','SALES REPRESENTATIVE','BOISE','USA'),('SEVES','SEVEN SEAS IMPORTS','HARI KUMAR','SALES MANAGER','LONDON','UK'),('SIMOB','SIMONS BISTRO','JYTTE PETERSEN','OWNER','KOBENHAVN','DENMARK'),('SPECD','SPÉCIALITÉS DU MONDE','DOMINIQUE PERRIER','MARKETING MANAGER','PARIS','FRANCE'),('SPLIR','SPLIT RAIL BEER & ALE','ART BRAUNSCHWEIGER','SALES MANAGER','LANDER','USA'),('SUPRD','SUPRĘMES DÉLICES','PASCALE CARTRAIN','ACCOUNTING MANAGER','CHARLEROI','BELGIUM'),('THEBI','THE BIG CHEESE','LIZ NIXON','MARKETING MANAGER','PORTLAND','USA'),('THECR','THE CRACKER BOX','LIU WONG','MARKETING ASSISTANT','BUTTE','USA'),('TOMSP','TOMS SPEZIALITÄTEN','KARIN JOSEPHS','MARKETING MANAGER','MÜNSTER','GERMANY'),('TORTU','TORTUGA RESTAURANTE','MIGUEL ANGEL PAOLINO','OWNER','MEXICO CITY','MEXICO'),('TRADH','TRADIÇĂO HIPERMERCADOS','ANABELA DOMINGUES','SALES REPRESENTATIVE','SAO PAULO','BRAZIL'),('TRAIH','TRAIL\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO ""customers"" VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE'),('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'ABONDANCE','DANIEL TONINI','SALES REPRESENTATIVE','VERSAILLES','FRANCE'),('LAMAI','LA MAISON D\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'S STOP N SHOP','JAIME YORRES','OWNER','SAN FRANCISCO','USA'),('LILAS','LILA-SUPERMERCADO','CARLOS GONZÁLEZ','ACCOUNTING MANAGER','BARQUISIMETO','VENEZUELA'),('LINOD','LINO-DELICATESES','FELIPE IZQUIERDO','OWNER','I. DE MARGARITA','VENEZUELA'),('LONEP','LONESOME PINE RESTAURANT','FRAN WILSON','SALES MANAGER','PORTLAND','USA'),('MAGAA','MAGAZZINI ALIMENTARI RIUNITI','GIOVANNI ROVELLI','MARKETING MANAGER','BERGAMO','ITALY'),('MAISD','MAISON DEWEY','CATHERINE DEWEY','SALES AGENT','BRUXELLES','BELGIUM'),('MEREP','MČRE PAILLARDE','JEAN FRESNIČRE','MARKETING ASSISTANT','MONTRÉAL','CANADA'),('MORGK','MORGENSTERN GESUNDKOST','ALEXANDER FEUER','MARKETING ASSISTANT','LEIPZIG','GERMANY'),('NORTS','NORTH/SOUTH','SIMON CROWTHER','SALES ASSOCIATE','LONDON','UK'),('OCEAN','OCÉANO ATLÁNTICO LTDA.','YVONNE MONCADA','SALES AGENT','BUENOS AIRES','ARGENTINA'),('OLDWO','OLD WORLD DELICATESSEN','RENE PHILLIPS','SALES REPRESENTATIVE','ANCHORAGE','USA'),('OTTIK','OTTILIES KÄSELADEN','HENRIETTE PFALZHEIM','OWNER','KÖLN','GERMANY'),('PARIS','PARIS SPÉCIALITÉS','MARIE BERTRAND','OWNER','PARIS','FRANCE'),('PERIC','PERICLES COMIDAS CLÁSICAS','GUILLERMO FERNÁNDEZ','SALES REPRESENTATIVE','MEXICO CITY','MEXICO'),('PICCO','PICCOLO UND MEHR','GEORG PIPPS','SALES MANAGER','SALZBURG','AUSTRIA'),('PRINI','PRINCESA ISABEL VINHOS','ISABEL DE CASTRO','SALES REPRESENTATIVE','LISBOA','PORTUGAL'),('QUEDE','QUE DELÍCIA','BERNARDO BATISTA','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL'),('QUEEN','QUEEN COZINHA','LÚCIA CARVALHO','MARKETING ASSISTANT','SAO PAULO','BRAZIL'),('QUICK','QUICK-STOP','HORST KLOSS','ACCOUNTING MANAGER','CUNEWALDE','GERMANY'),('RANCH','RANCHO GRANDE','SERGIO GUTIÉRREZ','SALES REPRESENTATIVE','BUENOS AIRES','ARGENTINA'),('RATTC','RATTLESNAKE CANYON GROCERY','PAULA WILSON','ASSISTANT SALES REPRESENTATIVE','ALBUQUERQUE','USA'),('REGGC','REGGIANI CASEIFICI','MAURIZIO MORONI','SALES ASSOCIATE','REGGIO EMILIA','ITALY'),('RICAR','RICARDO ADOCICADOS','JANETE LIMEIRA','ASSISTANT SALES AGENT','RIO DE JANEIRO','BRAZIL'),('RICSU','RICHTER SUPERMARKT','MICHAEL HOLZ','SALES MANAGER','GENČVE','SWITZERLAND'),('ROMEY','ROMERO Y TOMILLO','ALEJANDRA CAMINO','ACCOUNTING MANAGER','MADRID','SPAIN'),('SANTG','SANTÉ GOURMET','JONAS BERGULFSEN','OWNER','STAVERN','NORWAY'),('SAVEA','SAVE-A-LOT MARKETS','JOSE PAVAROTTI','SALES REPRESENTATIVE','BOISE','USA'),('SEVES','SEVEN SEAS IMPORTS','HARI KUMAR','SALES MANAGER','LONDON','UK'),('SIMOB','SIMONS BISTRO','JYTTE PETERSEN','OWNER','KOBENHAVN','DENMARK'),('SPECD','SPÉCIALITÉS DU MONDE','DOMINIQUE PERRIER','MARKETING MANAGER','PARIS','FRANCE'),('SPLIR','SPLIT RAIL BEER & ALE','ART BRAUNSCHWEIGER','SALES MANAGER','LANDER','USA'),('SUPRD','SUPRĘMES DÉLICES','PASCALE CARTRAIN','ACCOUNTING MANAGER','CHARLEROI','BELGIUM'),('THEBI','THE BIG CHEESE','LIZ NIXON','MARKETING MANAGER','PORTLAND','USA'),('THECR','THE CRACKER BOX','LIU WONG','MARKETING ASSISTANT','BUTTE','USA'),('TOMSP','TOMS SPEZIALITÄTEN','KARIN JOSEPHS','MARKETING MANAGER','MÜNSTER','GERMANY'),('TORTU','TORTUGA RESTAURANTE','MIGUEL ANGEL PAOLINO','OWNER','MEXICO CITY','MEXICO'),('TRADH','TRADIÇĂO HIPERMERCADOS','ANABELA DOMINGUES','SALES REPRESENTATIVE','SAO PAULO','BRAZIL'),('TRAIH','TRAIL\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO "customers" VALUES ('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Berlin','Germany'),('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Mexico City','Mexico'),('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mexico City','Mexico'),('AROUT','Around the Horn','Thomas Hardy','Sales Representative','London','UK'),('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Luleĺ','Sweden'),('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Mannheim','Germany'),('BLONP','Blondesddsl pčre et fils','Frédérique Citeaux','Marketing Manager','Strasbourg','France'),('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','Madrid','Spain'),('BONAP','Bon app\'','Laurence Lebihan','Owner','Marseille','France'),('BOTTM','Bottom-Dollar Markets','Elizabeth Lincoln','Accounting Manager','Tsawassen','Canada'),('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK'),('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina'),('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico'),('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland'),('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil'),('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK'),('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany'),('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France'),('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK'),('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria'),('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil'),('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain'),('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France'),('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden'),('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany'),('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France'),('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy'),('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal'),('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain'),('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain'),('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil'),('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA'),('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela'),('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil'),('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela'),('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA'),('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland'),('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK'),('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany'),('LACOR','La corne d\'abondance','Daniel Tonini','Sales Representative','Versailles','France'),('LAMAI','La maison d\'Asie','Annette Roulet','Sales Manager','Toulouse','France'),('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','Vancouver','Canada'),('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','Walla Walla','USA'),('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Frankfurt a.M.','Germany'),('LETSS','Let\'s Stop N Shop','Jaime Yorres','Owner','San Francisco','USA'),('LILAS','LILA-Supermercado','Carlos González','Accounting Manager','Barquisimeto','Venezuela'),('LINOD','LINO-Delicateses','Felipe Izquierdo','Owner','I. de Margarita','Venezuela'),('LONEP','Lonesome Pine Restaurant','Fran Wilson','Sales Manager','Portland','USA'),('MAGAA','Magazzini Alimentari Riuniti','Giovanni Rovelli','Marketing Manager','Bergamo','Italy'),('MAISD','Maison Dewey','Catherine Dewey','Sales Agent','Bruxelles','Belgium'),('MEREP','Mčre Paillarde','Jean Fresničre','Marketing Assistant','Montréal','Canada'),('MORGK','Morgenstern Gesundkost','Alexander Feuer','Marketing Assistant','Leipzig','Germany'),('NORTS','North/South','Simon Crowther','Sales Associate','London','UK'),('OCEAN','Océano Atlántico Ltda.','Yvonne Moncada','Sales Agent','Buenos Aires','Argentina'),('OLDWO','Old World Delicatessen','Rene Phillips','Sales Representative','Anchorage','USA'),('OTTIK','Ottilies Käseladen','Henriette Pfalzheim','Owner','Köln','Germany'),('PARIS','Paris spécialités','Marie Bertrand','Owner','Paris','France'),('PERIC','Pericles Comidas clásicas','Guillermo Fernández','Sales Representative','Mexico City','Mexico'),('PICCO','Piccolo und mehr','Georg Pipps','Sales Manager','Salzburg','Austria'),('PRINI','Princesa Isabel Vinhos','Isabel de Castro','Sales Representative','Lisboa','Portugal'),('QUEDE','Que Delícia','Bernardo Batista','Accounting Manager','Rio de Janeiro','Brazil'),('QUEEN','Queen Cozinha','Lúcia Carvalho','Marketing Assistant','Sao Paulo','Brazil'),('QUICK','QUICK-Stop','Horst Kloss','Accounting Manager','Cunewalde','Germany'),('RANCH','Rancho grande','Sergio Gutiérrez','Sales Representative','Buenos Aires','Argentina'),('RATTC','Rattlesnake Canyon Grocery','Paula Wilson','Assistant Sales Representative','Albuquerque','USA'),('REGGC','Reggiani Caseifici','Maurizio Moroni','Sales Associate','Reggio Emilia','Italy'),('RICAR','Ricardo Adocicados','Janete Limeira','Assistant Sales Agent','Rio de Janeiro','Brazil'),('RICSU','Richter Supermarkt','Michael Holz','Sales Manager','Genčve','Switzerland'),('ROMEY','Romero y tomillo','Alejandra Camino','Accounting Manager','Madrid','Spain'),('SANTG','Santé Gourmet','Jonas Bergulfsen','Owner','Stavern','Norway'),('SAVEA','Save-a-lot Markets','Jose Pavarotti','Sales Representative','Boise','USA'),('SEVES','Seven Seas Imports','Hari Kumar','Sales Manager','London','UK'),('SIMOB','Simons bistro','Jytte Petersen','Owner','Kobenhavn','Denmark'),('SPECD','Spécialités du monde','Dominique Perrier','Marketing Manager','Paris','France'),('SPLIR','Split Rail Beer & Ale','Art Braunschweiger','Sales Manager','Lander','USA'),('SUPRD','Supręmes délices','Pascale Cartrain','Accounting Manager','Charleroi','Belgium'),('THEBI','The Big Cheese','Liz Nixon','Marketing Manager','Portland','USA'),('THECR','The Cracker Box','Liu Wong','Marketing Assistant','Butte','USA'),('TOMSP','Toms Spezialitäten','Karin Josephs','Marketing Manager','Münster','Germany'),('TORTU','Tortuga Restaurante','Miguel Angel Paolino','Owner','Mexico City','Mexico'),('TRADH','Tradiçăo Hipermercados','Anabela Domingues','Sales Representative','Sao Paulo','Brazil'),('TRAIH','Trail\'s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','Kirkland','USA'),('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Ĺrhus','Denmark'),('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','Lyon','France'),('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','Reims','France'),('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Stuttgart','Germany'),('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Oulu','Finland'),('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Resende','Brazil'),('WHITC','White Clover Markets','Karl Jablonski','Owner','Seattle','USA'),('WILMK','Wilman Kala','Matti Karttunen','Owner/Marketing Assistant','Helsinki','Finland'),('WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','Owner','Warszawa','Poland') [42001-200]
+2025-12-26 10:21:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO ""customers"" VALUES ('BONAP','Bon app\'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE');
+INSERT INTO ""customers"" VALUES ('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA');
+INSERT INTO ""customers"" VALUES ('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO ""customers"" VALUES ('BONAP','Bon app\'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE');
+INSERT INTO ""customers"" VALUES ('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA');
+INSERT INTO ""customers"" VALUES ('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO "customers" VALUES ('BONAP','Bon app\'','Laurence Lebihan','Owner','Marseille','France');
+INSERT INTO "customers" VALUES ('BOTTM','Bottom-Dollar Markets','Elizabeth Lincoln','Accounting Manager','Tsawassen','Canada');
+INSERT INTO "customers" VALUES ('BSBEV','B\'s Beverages','Victoria Ashworth','Sales Representative','London','UK') [42001-200]
+2025-12-26 10:22:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO ""categories"" VALUES (1,'Beverages'','SOFT[*] DRINKS, COFFEES, TEAS, BEERS, AND ALES'')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO ""categories"" VALUES (1,'Beverages'','SOFT[*] DRINKS, COFFEES, TEAS, BEERS, AND ALES'')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO "categories" VALUES (1,'Beverages'','Soft drinks, coffees, teas, beers, and ales'') [42001-200]
+2025-12-26 10:22:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO ""customers"" VALUES ('BONAP','Bon app'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE');
+INSERT INTO ""customers"" VALUES ('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA');
+INSERT INTO ""customers"" VALUES ('BSBEV','B's Beverages','Victoria Ashworth','Sales Representative','London','UK')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO ""customers"" VALUES ('BONAP','Bon app'','LAURENCE[*] LEBIHAN','OWNER','MARSEILLE','FRANCE');
+INSERT INTO ""customers"" VALUES ('BOTTM','BOTTOM-DOLLAR MARKETS','ELIZABETH LINCOLN','ACCOUNTING MANAGER','TSAWASSEN','CANADA');
+INSERT INTO ""customers"" VALUES ('BSBEV','B's Beverages','Victoria Ashworth','Sales Representative','London','UK')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO "customers" VALUES ('BONAP','Bon app'','Laurence Lebihan','Owner','Marseille','France');
+INSERT INTO "customers" VALUES ('BOTTM','Bottom-Dollar Markets','Elizabeth Lincoln','Accounting Manager','Tsawassen','Canada');
+INSERT INTO "customers" VALUES ('BSBEV','B's Beverages','Victoria Ashworth','Sales Representative','London','UK') [42001-200]
+2025-12-26 10:23:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO ""categories"" VALUES (1,'Beverages''','Soft drinks, coffees, teas, beers, and ales'''');
+INSERT INTO ""categories"" VALUES (2,'CONDIMENTS[*]''','SWEET AND SAVORY SAUCES, RELISHES, SPREADS, AND SEASONINGS'''')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO ""categories"" VALUES (1,'Beverages''','Soft drinks, coffees, teas, beers, and ales'''');
+INSERT INTO ""categories"" VALUES (2,'CONDIMENTS[*]''','SWEET AND SAVORY SAUCES, RELISHES, SPREADS, AND SEASONINGS'''')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO "categories" VALUES (1,'Beverages''','Soft drinks, coffees, teas, beers, and ales'''');
+INSERT INTO "categories" VALUES (2,'Condiments''','Sweet and savory sauces, relishes, spreads, and seasonings'''') [42001-200]
+2025-12-26 10:24:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO ""customers"" VALUES ('BSBEV','B'S[*] BEVERAGES','VICTORIA ASHWORTH','SALES REPRESENTATIVE','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('CACTU','CACTUS COMIDAS PARA LLEVAR','PATRICIO SIMPSON','SALES AGENT','BUENOS AIRES','ARGENTINA');
+INSERT INTO ""customers"" VALUES ('CENTC','CENTRO COMERCIAL MOCTEZUMA','FRANCISCO CHANG','MARKETING MANAGER','MEXICO CITY','MEXICO');
+INSERT INTO ""customers"" VALUES ('CHOPS','CHOP-SUEY CHINESE','YANG WANG','OWNER','BERN','SWITZERLAND');
+INSERT INTO ""customers"" VALUES ('COMMI','COMÉRCIO MINEIRO','PEDRO AFONSO','SALES ASSOCIATE','SAO PAULO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('CONSH','CONSOLIDATED HOLDINGS','ELIZABETH BROWN','SALES REPRESENTATIVE','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('DRACD','DRACHENBLUT DELIKATESSEN','SVEN OTTLIEB','ORDER ADMINISTRATOR','AACHEN','GERMANY');
+INSERT INTO ""customers"" VALUES ('DUMON','DU MONDE ENTIER','JANINE LABRUNE','OWNER','NANTES','FRANCE');
+INSERT INTO ""customers"" VALUES ('EASTC','EASTERN CONNECTION','ANN DEVON','SALES AGENT','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('ERNSH','ERNST HANDEL','ROLAND MENDEL','SALES MANAGER','GRAZ','AUSTRIA');
+INSERT INTO ""customers"" VALUES ('FAMIA','FAMILIA ARQUIBALDO','ARIA CRUZ','MARKETING ASSISTANT','SAO PAULO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('FISSA','FISSA FABRICA INTER. SALCHICHAS S.A.','DIEGO ROEL','ACCOUNTING MANAGER','MADRID','SPAIN');
+INSERT INTO ""customers"" VALUES ('FOLIG','FOLIES GOURMANDES','MARTINE RANCÉ','ASSISTANT SALES AGENT','LILLE','FRANCE');
+INSERT INTO ""customers"" VALUES ('FOLKO','FOLK OCH FÄ HB','MARIA LARSSON','OWNER','BRÄCKE','SWEDEN');
+INSERT INTO ""customers"" VALUES ('FRANK','FRANKENVERSAND','PETER FRANKEN','MARKETING MANAGER','MÜNCHEN','GERMANY');
+INSERT INTO ""customers"" VALUES ('FRANR','FRANCE RESTAURATION','CARINE SCHMITT','MARKETING MANAGER','NANTES','FRANCE');
+INSERT INTO ""customers"" VALUES ('FRANS','FRANCHI S.P.A.','PAOLO ACCORTI','SALES REPRESENTATIVE','TORINO','ITALY');
+INSERT INTO ""customers"" VALUES ('FURIB','FURIA BACALHAU E FRUTOS DO MAR','LINO RODRIGUEZ','SALES MANAGER','LISBOA','PORTUGAL');
+INSERT INTO ""customers"" VALUES ('GALED','GALERÍA DEL GASTRÓNOMO','EDUARDO SAAVEDRA','MARKETING MANAGER','BARCELONA','SPAIN');
+INSERT INTO ""customers"" VALUES ('GODOS','GODOS COCINA TÍPICA','JOSÉ PEDRO FREYRE','SALES MANAGER','SEVILLA','SPAIN');
+INSERT INTO ""customers"" VALUES ('GOURL','GOURMET LANCHONETES','ANDRÉ FONSECA','SALES ASSOCIATE','CAMPINAS','BRAZIL');
+INSERT INTO ""customers"" VALUES ('GREAL','GREAT LAKES FOOD MARKET','HOWARD SNYDER','MARKETING MANAGER','EUGENE','USA');
+INSERT INTO ""customers"" VALUES ('GROSR','GROSELLA-RESTAURANTE','MANUEL PEREIRA','OWNER','CARACAS','VENEZUELA');
+INSERT INTO ""customers"" VALUES ('HANAR','HANARI CARNES','MARIO PONTES','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('HILAA','HILARION-ABASTOS','CARLOS HERNÁNDEZ','SALES REPRESENTATIVE','SAN CRISTÓBAL','VENEZUELA');
+INSERT INTO ""customers"" VALUES ('HUNGC','HUNGRY COYOTE IMPORT STORE','YOSHI LATIMER','SALES REPRESENTATIVE','ELGIN','USA');
+INSERT INTO ""customers"" VALUES ('HUNGO','HUNGRY OWL ALL-NIGHT GROCERS','PATRICIA MCKENNA','SALES ASSOCIATE','CORK','IRELAND');
+INSERT INTO ""customers"" VALUES ('ISLAT','ISLAND TRADING','HELEN BENNETT','MARKETING MANAGER','COWES','UK');
+INSERT INTO ""customers"" VALUES ('KOENE','KÖNIGLICH ESSEN','PHILIP CRAMER','SALES ASSOCIATE','BRANDENBURG','GERMANY');
+INSERT INTO ""customers"" VALUES ('LACOR','LA CORNE D'abondance','Daniel Tonini','Sales Representative','Versailles','France')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO ""customers"" VALUES ('BSBEV','B'S[*] BEVERAGES','VICTORIA ASHWORTH','SALES REPRESENTATIVE','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('CACTU','CACTUS COMIDAS PARA LLEVAR','PATRICIO SIMPSON','SALES AGENT','BUENOS AIRES','ARGENTINA');
+INSERT INTO ""customers"" VALUES ('CENTC','CENTRO COMERCIAL MOCTEZUMA','FRANCISCO CHANG','MARKETING MANAGER','MEXICO CITY','MEXICO');
+INSERT INTO ""customers"" VALUES ('CHOPS','CHOP-SUEY CHINESE','YANG WANG','OWNER','BERN','SWITZERLAND');
+INSERT INTO ""customers"" VALUES ('COMMI','COMÉRCIO MINEIRO','PEDRO AFONSO','SALES ASSOCIATE','SAO PAULO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('CONSH','CONSOLIDATED HOLDINGS','ELIZABETH BROWN','SALES REPRESENTATIVE','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('DRACD','DRACHENBLUT DELIKATESSEN','SVEN OTTLIEB','ORDER ADMINISTRATOR','AACHEN','GERMANY');
+INSERT INTO ""customers"" VALUES ('DUMON','DU MONDE ENTIER','JANINE LABRUNE','OWNER','NANTES','FRANCE');
+INSERT INTO ""customers"" VALUES ('EASTC','EASTERN CONNECTION','ANN DEVON','SALES AGENT','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('ERNSH','ERNST HANDEL','ROLAND MENDEL','SALES MANAGER','GRAZ','AUSTRIA');
+INSERT INTO ""customers"" VALUES ('FAMIA','FAMILIA ARQUIBALDO','ARIA CRUZ','MARKETING ASSISTANT','SAO PAULO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('FISSA','FISSA FABRICA INTER. SALCHICHAS S.A.','DIEGO ROEL','ACCOUNTING MANAGER','MADRID','SPAIN');
+INSERT INTO ""customers"" VALUES ('FOLIG','FOLIES GOURMANDES','MARTINE RANCÉ','ASSISTANT SALES AGENT','LILLE','FRANCE');
+INSERT INTO ""customers"" VALUES ('FOLKO','FOLK OCH FÄ HB','MARIA LARSSON','OWNER','BRÄCKE','SWEDEN');
+INSERT INTO ""customers"" VALUES ('FRANK','FRANKENVERSAND','PETER FRANKEN','MARKETING MANAGER','MÜNCHEN','GERMANY');
+INSERT INTO ""customers"" VALUES ('FRANR','FRANCE RESTAURATION','CARINE SCHMITT','MARKETING MANAGER','NANTES','FRANCE');
+INSERT INTO ""customers"" VALUES ('FRANS','FRANCHI S.P.A.','PAOLO ACCORTI','SALES REPRESENTATIVE','TORINO','ITALY');
+INSERT INTO ""customers"" VALUES ('FURIB','FURIA BACALHAU E FRUTOS DO MAR','LINO RODRIGUEZ','SALES MANAGER','LISBOA','PORTUGAL');
+INSERT INTO ""customers"" VALUES ('GALED','GALERÍA DEL GASTRÓNOMO','EDUARDO SAAVEDRA','MARKETING MANAGER','BARCELONA','SPAIN');
+INSERT INTO ""customers"" VALUES ('GODOS','GODOS COCINA TÍPICA','JOSÉ PEDRO FREYRE','SALES MANAGER','SEVILLA','SPAIN');
+INSERT INTO ""customers"" VALUES ('GOURL','GOURMET LANCHONETES','ANDRÉ FONSECA','SALES ASSOCIATE','CAMPINAS','BRAZIL');
+INSERT INTO ""customers"" VALUES ('GREAL','GREAT LAKES FOOD MARKET','HOWARD SNYDER','MARKETING MANAGER','EUGENE','USA');
+INSERT INTO ""customers"" VALUES ('GROSR','GROSELLA-RESTAURANTE','MANUEL PEREIRA','OWNER','CARACAS','VENEZUELA');
+INSERT INTO ""customers"" VALUES ('HANAR','HANARI CARNES','MARIO PONTES','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('HILAA','HILARION-ABASTOS','CARLOS HERNÁNDEZ','SALES REPRESENTATIVE','SAN CRISTÓBAL','VENEZUELA');
+INSERT INTO ""customers"" VALUES ('HUNGC','HUNGRY COYOTE IMPORT STORE','YOSHI LATIMER','SALES REPRESENTATIVE','ELGIN','USA');
+INSERT INTO ""customers"" VALUES ('HUNGO','HUNGRY OWL ALL-NIGHT GROCERS','PATRICIA MCKENNA','SALES ASSOCIATE','CORK','IRELAND');
+INSERT INTO ""customers"" VALUES ('ISLAT','ISLAND TRADING','HELEN BENNETT','MARKETING MANAGER','COWES','UK');
+INSERT INTO ""customers"" VALUES ('KOENE','KÖNIGLICH ESSEN','PHILIP CRAMER','SALES ASSOCIATE','BRANDENBURG','GERMANY');
+INSERT INTO ""customers"" VALUES ('LACOR','LA CORNE D'abondance','Daniel Tonini','Sales Representative','Versailles','France')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO "customers" VALUES ('BSBEV','B's Beverages','Victoria Ashworth','Sales Representative','London','UK');
+INSERT INTO "customers" VALUES ('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina');
+INSERT INTO "customers" VALUES ('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico');
+INSERT INTO "customers" VALUES ('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland');
+INSERT INTO "customers" VALUES ('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil');
+INSERT INTO "customers" VALUES ('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK');
+INSERT INTO "customers" VALUES ('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany');
+INSERT INTO "customers" VALUES ('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France');
+INSERT INTO "customers" VALUES ('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK');
+INSERT INTO "customers" VALUES ('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria');
+INSERT INTO "customers" VALUES ('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil');
+INSERT INTO "customers" VALUES ('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain');
+INSERT INTO "customers" VALUES ('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France');
+INSERT INTO "customers" VALUES ('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden');
+INSERT INTO "customers" VALUES ('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany');
+INSERT INTO "customers" VALUES ('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France');
+INSERT INTO "customers" VALUES ('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy');
+INSERT INTO "customers" VALUES ('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal');
+INSERT INTO "customers" VALUES ('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain');
+INSERT INTO "customers" VALUES ('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain');
+INSERT INTO "customers" VALUES ('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil');
+INSERT INTO "customers" VALUES ('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA');
+INSERT INTO "customers" VALUES ('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela');
+INSERT INTO "customers" VALUES ('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil');
+INSERT INTO "customers" VALUES ('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela');
+INSERT INTO "customers" VALUES ('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA');
+INSERT INTO "customers" VALUES ('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland');
+INSERT INTO "customers" VALUES ('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK');
+INSERT INTO "customers" VALUES ('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany');
+INSERT INTO "customers" VALUES ('LACOR','La corne d'abondance','Daniel Tonini','Sales Representative','Versailles','France') [42001-200]
+2025-12-26 10:24:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "
+INSERT INTO ""customers"" VALUES ('BSBEV','B'S[*] BEVERAGES','VICTORIA ASHWORTH','SALES REPRESENTATIVE','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('CACTU','CACTUS COMIDAS PARA LLEVAR','PATRICIO SIMPSON','SALES AGENT','BUENOS AIRES','ARGENTINA');
+INSERT INTO ""customers"" VALUES ('CENTC','CENTRO COMERCIAL MOCTEZUMA','FRANCISCO CHANG','MARKETING MANAGER','MEXICO CITY','MEXICO');
+INSERT INTO ""customers"" VALUES ('CHOPS','CHOP-SUEY CHINESE','YANG WANG','OWNER','BERN','SWITZERLAND');
+INSERT INTO ""customers"" VALUES ('COMMI','COMÉRCIO MINEIRO','PEDRO AFONSO','SALES ASSOCIATE','SAO PAULO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('CONSH','CONSOLIDATED HOLDINGS','ELIZABETH BROWN','SALES REPRESENTATIVE','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('DRACD','DRACHENBLUT DELIKATESSEN','SVEN OTTLIEB','ORDER ADMINISTRATOR','AACHEN','GERMANY');
+INSERT INTO ""customers"" VALUES ('DUMON','DU MONDE ENTIER','JANINE LABRUNE','OWNER','NANTES','FRANCE');
+INSERT INTO ""customers"" VALUES ('EASTC','EASTERN CONNECTION','ANN DEVON','SALES AGENT','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('ERNSH','ERNST HANDEL','ROLAND MENDEL','SALES MANAGER','GRAZ','AUSTRIA');
+INSERT INTO ""customers"" VALUES ('FAMIA','FAMILIA ARQUIBALDO','ARIA CRUZ','MARKETING ASSISTANT','SAO PAULO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('FISSA','FISSA FABRICA INTER. SALCHICHAS S.A.','DIEGO ROEL','ACCOUNTING MANAGER','MADRID','SPAIN');
+INSERT INTO ""customers"" VALUES ('FOLIG','FOLIES GOURMANDES','MARTINE RANCÉ','ASSISTANT SALES AGENT','LILLE','FRANCE');
+INSERT INTO ""customers"" VALUES ('FOLKO','FOLK OCH FÄ HB','MARIA LARSSON','OWNER','BRÄCKE','SWEDEN');
+INSERT INTO ""customers"" VALUES ('FRANK','FRANKENVERSAND','PETER FRANKEN','MARKETING MANAGER','MÜNCHEN','GERMANY');
+INSERT INTO ""customers"" VALUES ('FRANR','FRANCE RESTAURATION','CARINE SCHMITT','MARKETING MANAGER','NANTES','FRANCE');
+INSERT INTO ""customers"" VALUES ('FRANS','FRANCHI S.P.A.','PAOLO ACCORTI','SALES REPRESENTATIVE','TORINO','ITALY');
+INSERT INTO ""customers"" VALUES ('FURIB','FURIA BACALHAU E FRUTOS DO MAR','LINO RODRIGUEZ','SALES MANAGER','LISBOA','PORTUGAL');
+INSERT INTO ""customers"" VALUES ('GALED','GALERÍA DEL GASTRÓNOMO','EDUARDO SAAVEDRA','MARKETING MANAGER','BARCELONA','SPAIN');
+INSERT INTO ""customers"" VALUES ('GODOS','GODOS COCINA TÍPICA','JOSÉ PEDRO FREYRE','SALES MANAGER','SEVILLA','SPAIN');
+INSERT INTO ""customers"" VALUES ('GOURL','GOURMET LANCHONETES','ANDRÉ FONSECA','SALES ASSOCIATE','CAMPINAS','BRAZIL');
+INSERT INTO ""customers"" VALUES ('GREAL','GREAT LAKES FOOD MARKET','HOWARD SNYDER','MARKETING MANAGER','EUGENE','USA');
+INSERT INTO ""customers"" VALUES ('GROSR','GROSELLA-RESTAURANTE','MANUEL PEREIRA','OWNER','CARACAS','VENEZUELA');
+INSERT INTO ""customers"" VALUES ('HANAR','HANARI CARNES','MARIO PONTES','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('HILAA','HILARION-ABASTOS','CARLOS HERNÁNDEZ','SALES REPRESENTATIVE','SAN CRISTÓBAL','VENEZUELA');
+INSERT INTO ""customers"" VALUES ('HUNGC','HUNGRY COYOTE IMPORT STORE','YOSHI LATIMER','SALES REPRESENTATIVE','ELGIN','USA');
+INSERT INTO ""customers"" VALUES ('HUNGO','HUNGRY OWL ALL-NIGHT GROCERS','PATRICIA MCKENNA','SALES ASSOCIATE','CORK','IRELAND');
+INSERT INTO ""customers"" VALUES ('ISLAT','ISLAND TRADING','HELEN BENNETT','MARKETING MANAGER','COWES','UK');
+INSERT INTO ""customers"" VALUES ('KOENE','KÖNIGLICH ESSEN','PHILIP CRAMER','SALES ASSOCIATE','BRANDENBURG','GERMANY');
+INSERT INTO ""customers"" VALUES ('LACOR','LA CORNE D'abondance','Daniel Tonini','Sales Representative','Versailles','France')"; oczekiwano "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "
+INSERT INTO ""customers"" VALUES ('BSBEV','B'S[*] BEVERAGES','VICTORIA ASHWORTH','SALES REPRESENTATIVE','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('CACTU','CACTUS COMIDAS PARA LLEVAR','PATRICIO SIMPSON','SALES AGENT','BUENOS AIRES','ARGENTINA');
+INSERT INTO ""customers"" VALUES ('CENTC','CENTRO COMERCIAL MOCTEZUMA','FRANCISCO CHANG','MARKETING MANAGER','MEXICO CITY','MEXICO');
+INSERT INTO ""customers"" VALUES ('CHOPS','CHOP-SUEY CHINESE','YANG WANG','OWNER','BERN','SWITZERLAND');
+INSERT INTO ""customers"" VALUES ('COMMI','COMÉRCIO MINEIRO','PEDRO AFONSO','SALES ASSOCIATE','SAO PAULO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('CONSH','CONSOLIDATED HOLDINGS','ELIZABETH BROWN','SALES REPRESENTATIVE','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('DRACD','DRACHENBLUT DELIKATESSEN','SVEN OTTLIEB','ORDER ADMINISTRATOR','AACHEN','GERMANY');
+INSERT INTO ""customers"" VALUES ('DUMON','DU MONDE ENTIER','JANINE LABRUNE','OWNER','NANTES','FRANCE');
+INSERT INTO ""customers"" VALUES ('EASTC','EASTERN CONNECTION','ANN DEVON','SALES AGENT','LONDON','UK');
+INSERT INTO ""customers"" VALUES ('ERNSH','ERNST HANDEL','ROLAND MENDEL','SALES MANAGER','GRAZ','AUSTRIA');
+INSERT INTO ""customers"" VALUES ('FAMIA','FAMILIA ARQUIBALDO','ARIA CRUZ','MARKETING ASSISTANT','SAO PAULO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('FISSA','FISSA FABRICA INTER. SALCHICHAS S.A.','DIEGO ROEL','ACCOUNTING MANAGER','MADRID','SPAIN');
+INSERT INTO ""customers"" VALUES ('FOLIG','FOLIES GOURMANDES','MARTINE RANCÉ','ASSISTANT SALES AGENT','LILLE','FRANCE');
+INSERT INTO ""customers"" VALUES ('FOLKO','FOLK OCH FÄ HB','MARIA LARSSON','OWNER','BRÄCKE','SWEDEN');
+INSERT INTO ""customers"" VALUES ('FRANK','FRANKENVERSAND','PETER FRANKEN','MARKETING MANAGER','MÜNCHEN','GERMANY');
+INSERT INTO ""customers"" VALUES ('FRANR','FRANCE RESTAURATION','CARINE SCHMITT','MARKETING MANAGER','NANTES','FRANCE');
+INSERT INTO ""customers"" VALUES ('FRANS','FRANCHI S.P.A.','PAOLO ACCORTI','SALES REPRESENTATIVE','TORINO','ITALY');
+INSERT INTO ""customers"" VALUES ('FURIB','FURIA BACALHAU E FRUTOS DO MAR','LINO RODRIGUEZ','SALES MANAGER','LISBOA','PORTUGAL');
+INSERT INTO ""customers"" VALUES ('GALED','GALERÍA DEL GASTRÓNOMO','EDUARDO SAAVEDRA','MARKETING MANAGER','BARCELONA','SPAIN');
+INSERT INTO ""customers"" VALUES ('GODOS','GODOS COCINA TÍPICA','JOSÉ PEDRO FREYRE','SALES MANAGER','SEVILLA','SPAIN');
+INSERT INTO ""customers"" VALUES ('GOURL','GOURMET LANCHONETES','ANDRÉ FONSECA','SALES ASSOCIATE','CAMPINAS','BRAZIL');
+INSERT INTO ""customers"" VALUES ('GREAL','GREAT LAKES FOOD MARKET','HOWARD SNYDER','MARKETING MANAGER','EUGENE','USA');
+INSERT INTO ""customers"" VALUES ('GROSR','GROSELLA-RESTAURANTE','MANUEL PEREIRA','OWNER','CARACAS','VENEZUELA');
+INSERT INTO ""customers"" VALUES ('HANAR','HANARI CARNES','MARIO PONTES','ACCOUNTING MANAGER','RIO DE JANEIRO','BRAZIL');
+INSERT INTO ""customers"" VALUES ('HILAA','HILARION-ABASTOS','CARLOS HERNÁNDEZ','SALES REPRESENTATIVE','SAN CRISTÓBAL','VENEZUELA');
+INSERT INTO ""customers"" VALUES ('HUNGC','HUNGRY COYOTE IMPORT STORE','YOSHI LATIMER','SALES REPRESENTATIVE','ELGIN','USA');
+INSERT INTO ""customers"" VALUES ('HUNGO','HUNGRY OWL ALL-NIGHT GROCERS','PATRICIA MCKENNA','SALES ASSOCIATE','CORK','IRELAND');
+INSERT INTO ""customers"" VALUES ('ISLAT','ISLAND TRADING','HELEN BENNETT','MARKETING MANAGER','COWES','UK');
+INSERT INTO ""customers"" VALUES ('KOENE','KÖNIGLICH ESSEN','PHILIP CRAMER','SALES ASSOCIATE','BRANDENBURG','GERMANY');
+INSERT INTO ""customers"" VALUES ('LACOR','LA CORNE D'abondance','Daniel Tonini','Sales Representative','Versailles','France')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+
+INSERT INTO "customers" VALUES ('BSBEV','B's Beverages','Victoria Ashworth','Sales Representative','London','UK');
+INSERT INTO "customers" VALUES ('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Buenos Aires','Argentina');
+INSERT INTO "customers" VALUES ('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Mexico City','Mexico');
+INSERT INTO "customers" VALUES ('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Bern','Switzerland');
+INSERT INTO "customers" VALUES ('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Sao Paulo','Brazil');
+INSERT INTO "customers" VALUES ('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','London','UK');
+INSERT INTO "customers" VALUES ('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Aachen','Germany');
+INSERT INTO "customers" VALUES ('DUMON','Du monde entier','Janine Labrune','Owner','Nantes','France');
+INSERT INTO "customers" VALUES ('EASTC','Eastern Connection','Ann Devon','Sales Agent','London','UK');
+INSERT INTO "customers" VALUES ('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Graz','Austria');
+INSERT INTO "customers" VALUES ('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Sao Paulo','Brazil');
+INSERT INTO "customers" VALUES ('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','Madrid','Spain');
+INSERT INTO "customers" VALUES ('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','Lille','France');
+INSERT INTO "customers" VALUES ('FOLKO','Folk och fä HB','Maria Larsson','Owner','Bräcke','Sweden');
+INSERT INTO "customers" VALUES ('FRANK','Frankenversand','Peter Franken','Marketing Manager','München','Germany');
+INSERT INTO "customers" VALUES ('FRANR','France restauration','Carine Schmitt','Marketing Manager','Nantes','France');
+INSERT INTO "customers" VALUES ('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Torino','Italy');
+INSERT INTO "customers" VALUES ('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Lisboa','Portugal');
+INSERT INTO "customers" VALUES ('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Barcelona','Spain');
+INSERT INTO "customers" VALUES ('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','Sevilla','Spain');
+INSERT INTO "customers" VALUES ('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Campinas','Brazil');
+INSERT INTO "customers" VALUES ('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','Eugene','USA');
+INSERT INTO "customers" VALUES ('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','Caracas','Venezuela');
+INSERT INTO "customers" VALUES ('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rio de Janeiro','Brazil');
+INSERT INTO "customers" VALUES ('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','San Cristóbal','Venezuela');
+INSERT INTO "customers" VALUES ('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','Elgin','USA');
+INSERT INTO "customers" VALUES ('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','Cork','Ireland');
+INSERT INTO "customers" VALUES ('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Cowes','UK');
+INSERT INTO "customers" VALUES ('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Brandenburg','Germany');
+INSERT INTO "customers" VALUES ('LACOR','La corne d'abondance','Daniel Tonini','Sales Representative','Versailles','France') [42001-200]
+2025-12-26 10:48:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "categories""customers" nie istnieje
+Table "categories""customers" not found; SQL statement:
+SELECT * FROM "categories""customers" [42102-200]
+2025-12-26 10:48:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "categories""customers" nie istnieje
+Table "categories""customers" not found; SQL statement:
+SELECT * FROM "categories""customers" [42102-200]
+2025-12-26 11:15:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "CUSTOMERS" nie istnieje
+Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2025-12-29 21:45:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "CUSTOMERS" nie istnieje
+Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2025-12-29 21:46:53 database: flush
+org.h2.message.DbException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at org.oms.orders_management_system/org.oms.orders_management_system.H2ConnectionTest.main(H2ConnectionTest.java:21)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2025-12-29 21:47:22 database: flush
+org.h2.message.DbException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at org.oms.orders_management_system/org.oms.orders_management_system.H2ConnectionTest.main(H2ConnectionTest.java:21)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2025-12-29 21:48:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "CUSTOMERS" nie istnieje
+Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2025-12-29 21:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "CUSTOMERS" nie istnieje
+Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2025-12-29 21:51:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "CUSTOMERS" nie istnieje
+Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2025-12-29 21:51:25 database: flush
+org.h2.message.DbException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at org.oms.orders_management_system/org.oms.orders_management_system.H2ConnectionTest.main(H2ConnectionTest.java:21)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
