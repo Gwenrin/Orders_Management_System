@@ -8,13 +8,13 @@ import java.sql.Statement;
 public class H2ConnectionTest
 {
     public static void main(String[] args) {
-        // Ścieżka do bazy danych (zmień na pełną jeśli trzeba)
+        // Ścieżka do bazy danych
         String jdbcUrl = "jdbc:h2:file:./Database/northwind";
         String user = "sa";
         String password = "";
 
         try {
-            // Ładowanie sterownika (opcjonalne dla nowszych JDK)
+            // Ładowanie sterownika
             Class.forName("org.h2.Driver");
 
             // Nawiązywanie połączenia
