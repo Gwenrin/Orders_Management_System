@@ -18,6 +18,5 @@ public class HelloApplication extends Application
         stage.setScene(scene);
         stage.setMaximized(true);  
         stage.show();
-        stage.show();
     }
 }
