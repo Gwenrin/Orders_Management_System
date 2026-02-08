@@ -1,1 +1,0 @@
-JDBC URL jdbc:h2:file:C:/Users/matmi/Documents/IdeaProjects/Projekt/Orders_Management_System/Database/northwind

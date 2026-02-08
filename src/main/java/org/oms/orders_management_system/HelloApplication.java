@@ -13,9 +13,11 @@ public class HelloApplication extends Application
     public void start(Stage stage) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MainPageController.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("OMS!");
         stage.setScene(scene);
+        stage.setMaximized(true);  
+        stage.show();
         stage.show();
     }
 }

@@ -720,3 +720,27 @@ Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than t
 	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
 	at org.h2.mvstore.db.Store.<init>(Store.java:133)
 	... 10 more
+2026-02-08 12:16:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "ORDERS" nie istnieje
+Table "ORDERS" not found; SQL statement:
+SELECT OrderID, CustomerID, OrderDate, ShipCountry FROM Orders [42102-200]
+2026-02-08 12:17:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "ORDERS" nie istnieje
+Table "ORDERS" not found; SQL statement:
+SELECT OrderID, CustomerID FROM Orders [42102-200]
+2026-02-08 12:22:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "ORDERS" nie istnieje
+Table "ORDERS" not found; SQL statement:
+SELECT OrderID FROM Orders [42102-200]
+2026-02-08 12:32:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "ORDERS" nie istnieje
+Table "ORDERS" not found; SQL statement:
+SELECT OrderID FROM Orders [42102-200]
+2026-02-08 12:38:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "ORDERS" nie istnieje
+Table "ORDERS" not found; SQL statement:
+SELECT OrderID FROM Orders [42102-200]
+2026-02-08 12:38:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "ORDERS" nie istnieje
+Table "ORDERS" not found; SQL statement:
+SELECT OrderID FROM Orders [42102-200]

@@ -14,4 +14,5 @@ module org.oms.orders_management_system {
 
     opens org.oms.orders_management_system to javafx.fxml;
     exports org.oms.orders_management_system;
+    
 }
