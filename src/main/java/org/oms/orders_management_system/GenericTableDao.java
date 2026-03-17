@@ -6,13 +6,13 @@ import java.util.*;
 public class GenericTableDao
 {
 
-    // cytowanie identyfikatorów (rozwiązuje ORDERS vs orders)
+    // cytowanie identyfikatorów (rozwiązuje ORDERS i orders)
     private String q(String id)
     {
         return "\"" + id.replace("\"", "\"\"") + "\"";
     }
 
-    // ===== POBIERANIE TABEL =====
+    // Pobieranie tabel
     public List<String> getTables() throws SQLException
     {
         List<String> tables = new ArrayList<>();
@@ -32,7 +32,7 @@ public class GenericTableDao
         return tables;
     }
 
-    // ===== POBIERANIE KOLUMN =====
+    // Pobieranie kolumn
     public List<String> getColumns(String table) throws SQLException
     {
         List<String> cols = new ArrayList<>();
@@ -49,7 +49,7 @@ public class GenericTableDao
         return cols;
     }
 
-    // ===== POBIERANIE DANYCH =====
+    // Pobieranie danych
     public List<Map<String, Object>> fetchData(
             String table,
             List<String> columns
